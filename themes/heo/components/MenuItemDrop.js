@@ -22,7 +22,7 @@ export const MenuItemDrop = ({ link }) => {
 
         {/* 含子菜单的按钮 */}
         {hasSubMenu && <>
-            <div className='cursor-pointer font-sans hover:bg-black hover:bg-opacity-10 rounded-2xl flex justify-center items-center px-3 py-1 no-underline tracking-widest'>
+            <div className='cursor-pointer font-sans hover:bg-black hover:bg-opacity-10 rounded-xl flex justify-center items-center px-3 py-1 no-underline tracking-widest'>
                 {link?.icon && <i className={link?.icon} />} {link?.name}
             </div>
         </>}
