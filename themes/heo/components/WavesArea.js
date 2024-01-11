@@ -5,7 +5,7 @@ import { useGlobal } from '@/lib/global'
  */
 export default function WavesArea() {
   const { isDarkMode } = useGlobal()
-  const color = isDarkMode ? '#18171d' : '#f7f9fe'
+  const color = isDarkMode ? '#18171d' : '#18171d'
 
   return (
         <section className="main-hero-waves-area waves-area w-full absolute left-0 z-10 bottom-0">
@@ -15,9 +15,9 @@ export default function WavesArea() {
                 </defs>
                 <g className="parallax">
                     <use href="#gentle-wave" x="48" y="0"></use>
-                    <use href="#gentle-wave" x="48" y="3"></use>
-                    <use href="#gentle-wave" x="48" y="5"></use>
-                    <use href="#gentle-wave" x="48" y="7"></use>
+                    <use href="#gentle-wave" x="48" y="0"></use>
+                    <use href="#gentle-wave" x="48" y="0"></use>
+                    <use href="#gentle-wave" x="48" y="0"></use>
                 </g>
             </svg>
             <style jsx global>{`
