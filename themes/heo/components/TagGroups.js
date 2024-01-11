@@ -6,7 +6,7 @@ import Link from 'next/link'
  * @param currentTag
  * @returns {JSX.Element}
  * @constructor
- */
+
 const TagGroups = ({ tags, className }) => {
   if (!tags) return <></>
   return (
@@ -29,3 +29,4 @@ const TagGroups = ({ tags, className }) => {
 }
 
 export default TagGroups
+ */
