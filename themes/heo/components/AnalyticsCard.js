@@ -6,7 +6,7 @@ import { siteConfig } from '@/lib/config'
  * @param {*} props
  * @returns
  */
-export function AnalyticsCard(props) {
+/**export function AnalyticsCard(props) {
   const targetDate = new Date(siteConfig('HEO_SITE_CREATE_TIME', null, CONFIG))
   const today = new Date()
   const diffTime = today.getTime() - targetDate.getTime() // 获取两个日期之间的毫秒数差值
@@ -42,3 +42,4 @@ export function AnalyticsCard(props) {
         </div>
         </>
 }
+ */
