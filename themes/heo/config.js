@@ -5,20 +5,20 @@ const CONFIG = {
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: '', url: 'https://blog.tangly1024.com' },
-    { title: '', url: 'https://docs.tangly1024.com' }
+    { title: '', url: '' },
+    { title: '', url: '' }
   ],
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: 'AI',
-  HEO_HERO_TITLE_2: 'ART',
-  HEO_HERO_TITLE_3: 'DATAVIS',
-  HEO_HERO_TITLE_4: '',
-  HEO_HERO_TITLE_5: '',
+  HEO_HERO_TITLE_1: 'AIGC/ART/DATAVIS',
+  HEO_HERO_TITLE_2: '一起探索研究',
+  HEO_HERO_TITLE_3: 'Rocketlu',
+  HEO_HERO_TITLE_4: '关注Rocket',
+  HEO_HERO_TITLE_5: '1分钟如何拥有自己的Avatar',
   HEO_HERO_TITLE_LINK: 'https:www.rocketlu.cn',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: 'AI', url: '/tag/AI' },
+  HEO_HERO_CATEGORY_1: { title: 'AIGC', url: '/tag/AI' },
   HEO_HERO_CATEGORY_2: { title: 'ART', url: '/tag/ART' },
   HEO_HERO_CATEGORY_3: { title: 'DATAVIS', url: '/tag/DATAVIS' },
 
@@ -100,9 +100,9 @@ const CONFIG = {
   ],
 
   HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
-  HEO_SOCIAL_CARD_TITLE_1: 'AIGC创作者社区',
+  HEO_SOCIAL_CARD_TITLE_1: '智否AIFunr创作者社区',
   HEO_SOCIAL_CARD_TITLE_2: '加入我们的AIGC社区讨论分享',
-  HEO_SOCIAL_CARD_TITLE_3: '点击加入',
+  HEO_SOCIAL_CARD_TITLE_3: '点击加入智否',
   HEO_SOCIAL_CARD_URL: 'https://aifunr.com',
 
   // *****  以下配置无效，只是预留开发 ****
