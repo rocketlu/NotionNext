@@ -10,17 +10,17 @@ const CONFIG = {
   ],
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: 'AIGC/ART/DATAVIS',
-  HEO_HERO_TITLE_2: '一起探索研究',
+  HEO_HERO_TITLE_1: '一起探索',
+  HEO_HERO_TITLE_2: 'AIGC/ART/DATAVIS',
   HEO_HERO_TITLE_3: 'Rocketlu',
   HEO_HERO_TITLE_4: '关注Rocket',
   HEO_HERO_TITLE_5: '1分钟如何拥有自己的Avatar',
   HEO_HERO_TITLE_LINK: 'https://chat.openai.com/g/g-4K5QtDnBn-avatars-creator',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: 'AIGC', url: '/tag/AI' },
-  HEO_HERO_CATEGORY_2: { title: 'ART', url: '/tag/ART' },
-  HEO_HERO_CATEGORY_3: { title: 'DATAVIS', url: '/tag/DATAVIS' },
+  HEO_HERO_CATEGORY_1: { title: 'AIGC', url: '/tag/AIGC' },
+  HEO_HERO_CATEGORY_2: { title: 'ART', url: '/tag/Art' },
+  HEO_HERO_CATEGORY_3: { title: 'DATAVIS', url: '/tag/DataVis' },
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   HEO_HERO_RECOMMEND_POST_TAG: '更多',
