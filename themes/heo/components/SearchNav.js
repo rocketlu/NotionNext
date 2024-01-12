@@ -39,7 +39,6 @@ export default function SearchNav(props) {
                               className={
                                   ' duration-300 dark:hover:text-white dark:text-gray-200 rounded-xl px-3 cursor-pointer py-1 hover:bg-indigo-600 dark:hover:bg-indigo-600 hover:text-white'
                               }
-                          >
                               <i className="mr-4 fas fa-hat-wizard"></i>" />
                               {category.name}({category.count})
                           </div>
