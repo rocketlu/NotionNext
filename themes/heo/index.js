@@ -263,7 +263,7 @@ const LayoutArchive = props => {
 
   return (
     <LayoutBase {...props} slotRight={slotRight} headerSlot={headerSlot}>
-      <div className="p-5 rounded-xl border dark:border-gray-600 max-w-6xl w-full bg-white dark:bg-[#1e1e1e]">
+      <div className="p-5 rounded border dark:border-gray-600 max-w-6xl w-full bg-white dark:bg-[#1e1e1e]">
         {/* 文章分类条 */}
         <CategoryBar {...props} border={false} />
 
@@ -326,7 +326,7 @@ const LayoutSlug = props => {
       showTag={false}
       slotRight={slotRight}
     >
-      <div className={`w-full ${fullWidth ? '' : 'xl:max-w-5xl'} ${hasCode ? 'xl:w-[73.15vw]' : ''} lg:hover:shadow lg:border rounded-2xl lg:px-2 lg:py-4 bg-white dark:bg-[#18171d] dark:border-gray-600 article`}>
+      <div className={`w-full ${fullWidth ? '' : 'xl:max-w-5xl'} ${hasCode ? 'xl:w-[73.15vw]' : ''} lg:hover:shadow lg:border rounded lg:px-2 lg:py-4 bg-white dark:bg-[#18171d] dark:border-gray-600 article`}>
         {lock && <ArticleLock validPassword={validPassword} />}
 
         {!lock && (
@@ -432,7 +432,7 @@ const Layout404 = props => {
             unmount={false}
           >
             {/* 404卡牌 */}
-            <div className="error-content flex flex-col md:flex-row w-full mt-12 h-[30rem] md:h-96 justify-center items-center bg-white dark:bg-[#1B1C20] border dark:border-gray-800 rounded-3xl">
+            <div className="error-content flex flex-col md:flex-row w-full mt-12 h-[30rem] md:h-96 justify-center items-center bg-white dark:bg-[#1B1C20] border dark:border-gray-800 rounded">
               {/* 左侧动图 */}
               <LazyImage
                 className="error-img h-60 md:h-full p-4"
@@ -446,7 +446,7 @@ const Layout404 = props => {
                 </h1>
                 <div className='dark:text-white'>请尝试站内搜索寻找文章</div>
                 <Link href="/">
-                  <button className="bg-blue-500 py-2 px-4 text-white shadow rounded-lg hover:bg-blue-600 hover:shadow-md duration-200 transition-all">
+                  <button className="bg-blue-500 py-2 px-4 text-white shadow rounded hover:bg-blue-600 hover:shadow-md duration-200 transition-all">
                     回到主页
                   </button>
                 </Link>
@@ -501,12 +501,12 @@ const LayoutCategoryIndex = props => {
               >
                 <div
                   className={
-                    'group mr-5 mb-5 flex flex-nowrap items-center border bg-white text-2xl rounded-xl dark:hover:text-white px-4 cursor-pointer py-3 hover:text-white hover:bg-indigo-600 transition-all hover:scale-110 duration-150'
+                    'group mr-5 mb-5 flex flex-nowrap items-center border bg-white text-2xl rounded dark:hover:text-white px-4 cursor-pointer py-3 hover:text-white hover:bg-indigo-600 transition-all hover:scale-110 duration-150'
                   }
                 >
                   <HashTag className={'w-5 h-5 stroke-gray-500 stroke-2'} />
                   {category.name}
-                  <div className="bg-[#f1f3f8] ml-1 px-2 rounded-lg group-hover:text-indigo-600 ">
+                  <div className="bg-[#f1f3f8] ml-1 px-2 rounded group-hover:text-indigo-600 ">
                     {category.count}
                   </div>
                 </div>
@@ -555,12 +555,12 @@ const LayoutTagIndex = props => {
               >
                 <div
                   className={
-                    'group flex flex-nowrap items-center border bg-white text-2xl rounded-xl dark:hover:text-white px-4 cursor-pointer py-3 hover:text-white hover:bg-indigo-600 transition-all hover:scale-110 duration-150'
+                    'group flex flex-nowrap items-center border bg-white text-2xl rounded dark:hover:text-white px-4 cursor-pointer py-3 hover:text-white hover:bg-indigo-600 transition-all hover:scale-110 duration-150'
                   }
                 >
                   <HashTag className={'w-5 h-5 stroke-gray-500 stroke-2'} />
                   {tag.name}
-                  <div className="bg-[#f1f3f8] ml-1 px-2 rounded-lg group-hover:text-indigo-600 ">
+                  <div className="bg-[#f1f3f8] ml-1 px-2 rounded group-hover:text-indigo-600 ">
                     {tag.count}
                   </div>
                 </div>
