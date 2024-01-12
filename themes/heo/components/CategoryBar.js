@@ -37,13 +37,13 @@ export default function CategoryBar(props) {
             {categoryOptions?.map((c, index) => <MenuItem key={index} href={`/category/${c.name}`} name={c.name} />)}
         </div>
 
-        <div id='category-bar-next' className='flex items-center justify-center'>
+        <div id='category-bar-next' className='flex items-center justify-center text-white'>
             <div id='right' className='cursor-pointer mx-2' onClick={handleToggleScroll}>
             {scrollRight ? <ChevronDoubleLeft className={'w-5 h-5'} /> : <ChevronDoubleRight className={'w-5 h-5'} /> }
             </div>
-            <Link href='/category' className='whitespace-nowrap font-bold text-gray-900 dark:text-white transition-colors duration-200 hover:text-indigo-600'>
+            {/* <Link href='/category' className='whitespace-nowrap font-bold text-gray-900 dark:text-white transition-colors duration-200 hover:text-indigo-600'>
                 {locale.MENU.CATEGORY}
-            </Link>
+            </Link> */}
         </div>
     </div>
 }
