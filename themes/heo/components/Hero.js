@@ -127,7 +127,7 @@ function TagsGroupBar() {
               <div
                 style={{ background: g.color_1 }}
                 className={
-                  'tags-group-icon w-28 h-28 rounded-xl flex items-center justify-center text-white text-lg font-bold shadow-md'
+                  'tags-group-icon w-28 h-28 rounded flex items-center justify-center text-white text-lg font-bold shadow-md'
                 }
               >
                 <LazyImage
@@ -140,7 +140,7 @@ function TagsGroupBar() {
               <div
                 style={{ background: g.color_2 }}
                 className={
-                  'tags-group-icon  mt-5 w-28 h-28 rounded-xl flex items-center justify-center text-white text-lg font-bold shadow-md'
+                  'tags-group-icon  mt-5 w-28 h-28 rounded flex items-center justify-center text-white text-lg font-bold shadow-md'
                 }
               >
                 <LazyImage
@@ -174,7 +174,7 @@ function GroupMenu() {
           <span className="absolute -bottom-0.5 left-5 w-5 h-0.5 bg-white rounded-full"></span>
         </div>
         <div className="hidden lg:block absolute right-6  duration-700 ease-in-out transition-all scale-[2] translate-y-6 rotate-12 opacity-20 group-hover:opacity-80 group-hover:scale-100 group-hover:translate-y-0 group-hover:rotate-0">
-          <i className="fa-solid fa-star text-4xl"></i>
+          <i className="fa-solid fa-hat-wizard text-4xl"></i>
         </div>
       </Link>
       <Link
@@ -199,7 +199,7 @@ function GroupMenu() {
           <span className="absolute -bottom-0.5 left-5 w-5 h-0.5 bg-white rounded-full"></span>
         </div>
         <div className="absolute right-6 duration-700 ease-in-out transition-all scale-[2] translate-y-6 rotate-12 opacity-20 group-hover:opacity-80 group-hover:scale-100 group-hover:translate-y-0 group-hover:rotate-0">
-          <i className="fa-solid fa-book-bookmark text-4xl "></i>
+          <i className="fa-solid fa-icon text-4xl "></i>
         </div>
       </Link>
     </div>
@@ -367,7 +367,7 @@ function TodayCard({ cRef, siteInfo }) {
               className={'w-6 h-6 mr-2 bg-white rounded-full stroke-indigo-400'}
             />
             <div id="more" className="select-none">
-              更多推荐
+              More
             </div>
           </div>
         </div>
