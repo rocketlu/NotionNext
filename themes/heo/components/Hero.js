@@ -97,13 +97,13 @@ function Banner(props) {
         id="banner-cover"
         style={{ backdropFilter: 'blur(15px)' }}
         className={
-          'rounded overflow-hidden opacity-0 group-hover:opacity-100 duration-300 transition-all bg-[#4259efdd] dark:bg-[#dca846] dark:text-white cursor-pointer absolute w-full h-full top-0 flex justify-start items-center'
+          'rounded overflow-hidden opacity-0 group-hover:opacity-100 duration-300 transition-all bg-[#4259efdd] dark:bg-[#4259efdd] dark:text-white cursor-pointer absolute w-full h-full top-0 flex justify-start items-center'
         }
       >
         <div className="ml-12 -translate-x-32 group-hover:translate-x-0 duration-300 transition-all ease-in">
-          <div className="text-3xl text-white font-extrabold">随便看看</div>
+          <div className="text-2xl text-white font-bold">随便看看</div>
           <div className="-ml-3 text-gray-300">
-            <ArrowSmallRight className={'w-16 h-16 stroke-2'} />
+            <ArrowSmallRight className={'w-16 h-16 stroke-1'} />
           </div>
         </div>
       </div>
