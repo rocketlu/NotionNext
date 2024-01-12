@@ -26,7 +26,7 @@ const LatestPostsGroup = ({ latestPosts, siteInfo }) => {
 
                     className={'my-3 flex flex-col w-full'}>
 
-                    <div className="w-full h-24 md:h-60 overflow-hidden relative rounded-lg mb-2">
+                    <div className="w-full h-24 md:h-60 overflow-hidden relative rounded mb-2">
                         <LazyImage src={`${headerImage}`} className='object-cover w-full h-full' />
                     </div>
 
