@@ -14,7 +14,7 @@ const CONFIG = {
   HEO_HERO_TITLE_2: 'AIGC/ART/DATAVIS',
   HEO_HERO_TITLE_3: 'Rocketlu',
   HEO_HERO_TITLE_4: '关注Rocket',
-  HEO_HERO_TITLE_5: '1分钟如何拥有自己的Avatar',
+  HEO_HERO_TITLE_5: '如何1分钟拥有自己的Avatar',
   HEO_HERO_TITLE_LINK: 'https://chat.openai.com/g/g-4K5QtDnBn-avatars-creator',
 
   // 英雄区显示三个置顶分类
