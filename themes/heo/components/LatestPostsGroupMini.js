@@ -23,7 +23,7 @@ export default function LatestPostsGroupMini ({ latestPosts, siteInfo }) {
   return <>
         <div className=" mb-2 px-1 flex flex-nowrap justify-between">
             <div>
-                <i className="mr-2 fas fas fa-history" />
+                <i className="mr-2 fas fas fa-user-astronaut" />
                 {locale.COMMON.LATEST_POSTS}
             </div>
         </div>
@@ -41,7 +41,7 @@ export default function LatestPostsGroupMini ({ latestPosts, siteInfo }) {
                     className={'my-3 flex'}>
 
                     <div className="w-20 h-14 overflow-hidden relative">
-                            <LazyImage src={`${headerImage}`} className='object-cover w-full h-full rounded-lg'/>
+                            <LazyImage src={`${headerImage}`} className='object-cover w-full h-full rounded'/>
                     </div>
                     <div
                         className={
