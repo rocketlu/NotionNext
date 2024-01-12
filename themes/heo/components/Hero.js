@@ -76,7 +76,7 @@ function Banner(props) {
     <div
       id="banners"
       onClick={handleClickBanner}
-      className="hidden xl:flex xl:flex-col group h-full bg-white dark:bg-[#1e1e1e] rounded-xl border dark:border-gray-700 mb-3 relative overflow-hidden"
+      className="hidden xl:flex xl:flex-col group h-full bg-white dark:bg-[#1e1e1e] rounded-l border dark:border-gray-700 mb-3 relative overflow-hidden"
     >
       <div id="banner-title" className="flex flex-col absolute top-10 left-10">
         <div className="text-4xl font-bold mb-3  dark:text-white">
@@ -101,9 +101,9 @@ function Banner(props) {
         }
       >
         <div className="ml-12 -translate-x-32 group-hover:translate-x-0 duration-300 transition-all ease-in">
-          <div className="text-7xl text-white font-extrabold">随便逛逛</div>
+          <div className="text-3xl text-white font-extrabold">随便看看</div>
           <div className="-ml-3 text-gray-300">
-            <ArrowSmallRight className={'w-24 h-24 stroke-2'} />
+            <ArrowSmallRight className={'w-16 h-16 stroke-2'} />
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@ function TagsGroupBar() {
               <div
                 style={{ background: g.color_1 }}
                 className={
-                  'tags-group-icon w-28 h-28 rounded-3xl flex items-center justify-center text-white text-lg font-bold shadow-md'
+                  'tags-group-icon w-28 h-28 rounded-xl flex items-center justify-center text-white text-lg font-bold shadow-md'
                 }
               >
                 <LazyImage
@@ -140,7 +140,7 @@ function TagsGroupBar() {
               <div
                 style={{ background: g.color_2 }}
                 className={
-                  'tags-group-icon  mt-5 w-28 h-28 rounded-3xl flex items-center justify-center text-white text-lg font-bold shadow-md'
+                  'tags-group-icon  mt-5 w-28 h-28 rounded-xl flex items-center justify-center text-white text-lg font-bold shadow-md'
                 }
               >
                 <LazyImage
@@ -179,7 +179,7 @@ function GroupMenu() {
       </Link>
       <Link
         href={siteConfig('HEO_HERO_CATEGORY_2', null, CONFIG)?.url}
-        className="group relative overflow-hidden bg-gradient-to-r from-red-500 to-yellow-500 flex h-20 justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in"
+        className="group relative overflow-hidden bg-gradient-to-r from-red-500 to-indigo-500 flex h-20 justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in"
       >
         <div className="font-bold lg:text-lg pl-5 relative -mt-2">
           {siteConfig('HEO_HERO_CATEGORY_2', null, CONFIG)?.title}
@@ -233,18 +233,18 @@ function TopGroup(props) {
         {topPosts?.map((p, index) => {
           return (
             <Link href={`${siteConfig('SUB_PATH', '')}/${p?.slug}`} key={index}>
-              <div className="cursor-pointer h-[164px] group relative flex flex-col w-52 xl:w-full overflow-hidden shadow bg-white dark:bg-black dark:text-white rounded-xl">
+              <div className="cursor-pointer h-[164px] group relative flex flex-col w-52 xl:w-full overflow-hidden shadow bg-white dark:bg-black dark:text-white rounded-l">
                 <LazyImage
                   priority={index === 0}
                   className="h-24 object-cover"
                   alt={p?.title}
                   src={p?.pageCoverThumbnail || siteInfo?.pageCover}
                 />
-                <div className="group-hover:text-indigo-600 dark:group-hover:text-yellow-600 line-clamp-2 overflow-hidden m-2 font-semibold">
+                <div className="group-hover:text-indigo-600 dark:group-hover:text-indigo-600 line-clamp-2 overflow-hidden m-2 font-semibold">
                   {p?.title}
                 </div>
                 {/* hover 悬浮的 ‘荐’ 字 */}
-                <div className="opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 duration-200 transition-all absolute -top-2 -left-2 bg-indigo-600 dark:bg-yellow-600  text-white rounded-xl overflow-hidden pr-2 pb-2 pl-4 pt-4 text-xs">
+                <div className="opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 duration-200 transition-all absolute -top-2 -left-2 bg-indigo-600 dark:bg-indigo-600  text-white rounded-xl overflow-hidden pr-2 pb-2 pl-4 pt-4 text-xs">
                   荐
                 </div>
               </div>
@@ -347,7 +347,7 @@ function TodayCard({ cRef, siteInfo }) {
           isCoverUp
             ? 'opacity-100 cursor-pointer'
             : 'opacity-0 transform scale-110 pointer-events-none'
-        } shadow transition-all duration-200 today-card h-full bg-[#0E57D5] rounded-xl relative overflow-hidden flex items-end`}
+        } shadow transition-all duration-200 today-card h-full bg-[#0E57D5] rounded-l relative overflow-hidden flex items-end`}
       >
         <div
           id="today-card-info"
@@ -361,7 +361,7 @@ function TodayCard({ cRef, siteInfo }) {
             onClick={handleClickMore}
             className={`'${
               isCoverUp ? '' : 'hidden pointer-events-none '
-            } flex items-center px-3 h-10 justify-center bg-[#425aef] hover:bg-[#4259efcb] transition-colors duration-100 rounded-3xl`}
+            } flex items-center px-3 h-10 justify-center bg-[#425aef] hover:bg-[#4259efcb] transition-colors duration-100 rounded-l`}
           >
             <PlusSmall
               className={'w-6 h-6 mr-2 bg-white rounded-full stroke-indigo-400'}
