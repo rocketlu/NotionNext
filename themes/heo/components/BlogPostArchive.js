@@ -35,7 +35,7 @@ const BlogPostArchive = ({ posts = [], archiveTitle, siteInfo }) => {
                             {showPageCover && (
                                 <div>
                                     <Link href={`${siteConfig('SUB_PATH', '')}/${post.slug}`} passHref legacyBehavior>
-                                        <LazyImage className={'rounded-l bg-center bg-cover w-40 h-24'} src={post?.pageCoverThumbnail}/>
+                                        <LazyImage className={'rounded bg-center bg-cover w-40 h-24'} src={post?.pageCoverThumbnail}/>
                                     </Link>
                                 </div>
                             )}
