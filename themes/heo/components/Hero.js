@@ -167,7 +167,7 @@ function GroupMenu() {
     <div className="h-[165px] select-none xl:h-20 flex flex-col justify-between xl:space-y-0 xl:flex-row w-28 lg:w-48 xl:w-full xl:flex-nowrap xl:space-x-3">
       <Link
         href={siteConfig('HEO_HERO_CATEGORY_1', null, CONFIG)?.url}
-        className="group relative overflow-hidden bg-gradient-to-r from-blue-500 to-blue-400 flex h-20 justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in"
+        className="group relative overflow-hidden bg-gradient-to-r from-blue-500 to-blue-400 flex h-20 justify-start items-center text-white rounded xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in"
       >
         <div className="font-bold lg:text-lg  pl-5 relative -mt-2">
           {siteConfig('HEO_HERO_CATEGORY_1', null, CONFIG)?.title}
@@ -179,7 +179,7 @@ function GroupMenu() {
       </Link>
       <Link
         href={siteConfig('HEO_HERO_CATEGORY_2', null, CONFIG)?.url}
-        className="group relative overflow-hidden bg-gradient-to-r from-red-500 to-indigo-500 flex h-20 justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in"
+        className="group relative overflow-hidden bg-gradient-to-r from-red-500 to-indigo-500 flex h-20 justify-start items-center text-white rounded xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in"
       >
         <div className="font-bold lg:text-lg pl-5 relative -mt-2">
           {siteConfig('HEO_HERO_CATEGORY_2', null, CONFIG)?.title}
@@ -192,14 +192,14 @@ function GroupMenu() {
       {/* 第三个标签在小屏上不显示 */}
       <Link
         href={siteConfig('HEO_HERO_CATEGORY_3', null, CONFIG)?.url}
-        className="group relative overflow-hidden bg-gradient-to-r from-teal-300 to-cyan-300 hidden h-20 xl:flex justify-start items-center text-white rounded-xl xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in"
+        className="group relative overflow-hidden bg-gradient-to-r from-teal-300 to-cyan-300 hidden h-20 xl:flex justify-start items-center text-white rounded xl:hover:w-1/2 xl:w-1/3 transition-all duration-500 ease-in"
       >
         <div className="font-bold text-lg pl-5 relative -mt-2">
           {siteConfig('HEO_HERO_CATEGORY_3', null, CONFIG)?.title}
           <span className="absolute -bottom-0.5 left-5 w-5 h-0.5 bg-white rounded-full"></span>
         </div>
         <div className="absolute right-6 duration-700 ease-in-out transition-all scale-[2] translate-y-6 rotate-12 opacity-20 group-hover:opacity-80 group-hover:scale-100 group-hover:translate-y-0 group-hover:rotate-0">
-          <i className="fa-solid fa-icon text-4xl "></i>
+          <i className="fa-solid fa-feather text-4xl "></i>
         </div>
       </Link>
     </div>
@@ -233,7 +233,7 @@ function TopGroup(props) {
         {topPosts?.map((p, index) => {
           return (
             <Link href={`${siteConfig('SUB_PATH', '')}/${p?.slug}`} key={index}>
-              <div className="cursor-pointer h-[164px] group relative flex flex-col w-52 xl:w-full overflow-hidden shadow bg-white dark:bg-black dark:text-white rounded-l">
+              <div className="cursor-pointer h-[164px] group relative flex flex-col w-52 xl:w-full overflow-hidden shadow bg-white dark:bg-black dark:text-white rounded">
                 <LazyImage
                   priority={index === 0}
                   className="h-24 object-cover"
@@ -244,7 +244,7 @@ function TopGroup(props) {
                   {p?.title}
                 </div>
                 {/* hover 悬浮的 ‘荐’ 字 */}
-                <div className="opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 duration-200 transition-all absolute -top-2 -left-2 bg-indigo-600 dark:bg-indigo-600  text-white rounded-xl overflow-hidden pr-2 pb-2 pl-4 pt-4 text-xs">
+                <div className="opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 duration-200 transition-all absolute -top-2 -left-2 bg-indigo-600 dark:bg-indigo-600  text-white rounded overflow-hidden pr-2 pb-2 pl-4 pt-4 text-xs">
                   荐
                 </div>
               </div>
@@ -347,7 +347,7 @@ function TodayCard({ cRef, siteInfo }) {
           isCoverUp
             ? 'opacity-100 cursor-pointer'
             : 'opacity-0 transform scale-110 pointer-events-none'
-        } shadow transition-all duration-200 today-card h-full bg-[#0E57D5] rounded-l relative overflow-hidden flex items-end`}
+        } shadow transition-all duration-200 today-card h-full bg-[#0E57D5] rounded relative overflow-hidden flex items-end`}
       >
         <div
           id="today-card-info"
@@ -361,7 +361,7 @@ function TodayCard({ cRef, siteInfo }) {
             onClick={handleClickMore}
             className={`'${
               isCoverUp ? '' : 'hidden pointer-events-none '
-            } flex items-center px-3 h-10 justify-center bg-[#425aef] hover:bg-[#4259efcb] transition-colors duration-100 rounded-l`}
+            } flex items-center px-3 h-10 justify-center bg-[#425aef] hover:bg-[#4259efcb] transition-colors duration-100 rounded`}
           >
             <PlusSmall
               className={'w-6 h-6 mr-2 bg-white rounded-full stroke-indigo-400'}
