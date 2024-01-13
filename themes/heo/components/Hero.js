@@ -76,10 +76,10 @@ function Banner(props) {
     <div
       id="banners"
       onClick={handleClickBanner}
-      className="hidden xl:flex xl:flex-col group h-full bg-white dark:bg-[#1e1e1e] rounded-xl border dark:border-gray-700 mb-3 relative overflow-hidden"
+      className="hidden xl:flex xl:flex-col group h-full bg-white dark:bg-[#1e1e1e] rounded border dark:border-gray-700 mb-3 relative overflow-hidden"
     >
       <div id="banner-title" className="flex flex-col absolute top-10 left-10">
-        <div className="text-4xl font-bold mb-3  dark:text-white">
+        <div className="text-3xl font-bold mb-3  dark:text-white">
           {siteConfig('HEO_HERO_TITLE_1', null, CONFIG)}
           <br />
           {siteConfig('HEO_HERO_TITLE_2', null, CONFIG)}
@@ -97,7 +97,7 @@ function Banner(props) {
         id="banner-cover"
         style={{ backdropFilter: 'blur(15px)' }}
         className={
-          'rounded overflow-hidden opacity-0 group-hover:opacity-100 duration-300 transition-all bg-[#4259efdd] dark:bg-[#4259efdd] dark:text-white cursor-pointer absolute w-full h-full top-0 flex justify-start items-center'
+          'rounded-xl overflow-hidden opacity-0 group-hover:opacity-100 duration-300 transition-all bg-[#4259efdd] dark:bg-[#4259efdd] dark:text-white cursor-pointer absolute w-full h-full top-0 flex justify-start items-center'
         }
       >
         <div className="ml-12 -translate-x-32 group-hover:translate-x-0 duration-300 transition-all ease-in">
