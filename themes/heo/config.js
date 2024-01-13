@@ -47,12 +47,12 @@ const CONFIG = {
       color_1: '#989bf8',
       title_2: 'Sketch',
       img_2: '/images/heo/mj.png',
-      color_2: '#ffffff'
+      color_2: '#242425'
     },
     {
       title_1: 'Docker',
       img_1: '/images/heo/sd.png',
-      color_1: '#57b6e6',
+      color_1: '#9E43FF',
       title_2: 'Photoshop',
       img_2: '/images/heo/2023e4058a91608ea41751c4f102b131f267075902.webp',
       color_2: '#4082c3'
@@ -68,10 +68,10 @@ const CONFIG = {
     {
       title_1: 'Swift',
       img_1: '/images/heo/gpt.png',
-      color_1: '#eb6840',
+      color_1: '#297260',
       title_2: 'Principle',
       img_2: '/images/heo/hf.png',
-      color_2: '#8f55ba'
+      color_2: '#FFC700'
     },
     {
       title_1: 'illustrator',
@@ -79,7 +79,7 @@ const CONFIG = {
       color_1: '#f29e39',
       title_2: 'CSS3',
       img_2: '/images/heo/ci.png',
-      color_2: '#2c51db'
+      color_2: '#0E57E3'
     },
     {
       title_1: 'JS',
@@ -87,7 +87,7 @@ const CONFIG = {
       color_1: '#f7cb4f',
       title_2: 'HTML',
       img_2: '/images/heo/rw.png',
-      color_2: '#e9572b'
+      color_2: '#ffffff'
     },
     {
       title_1: 'Git',
@@ -95,7 +95,7 @@ const CONFIG = {
       color_1: '#df5b40',
       title_2: 'Rhino',
       img_2: '/images/heo/aifunr.png',
-      color_2: '#1f1f1f'
+      color_2: '#ffffff'
     }
   ],
 
