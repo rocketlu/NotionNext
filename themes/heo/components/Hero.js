@@ -78,7 +78,7 @@ function Banner(props) {
       onClick={handleClickBanner}
       className="hidden xl:flex xl:flex-col group h-full bg-white dark:bg-[#1e1e1e] rounded border dark:border-gray-700 mb-3 relative overflow-hidden"
     >
-      <div id="banner-title" className="flex flex-col absolute top-10 left-10">
+      <div id="banner-title" className="flex flex-col absolute top-10 left-10 z-10">
         <div className="text-3xl font-bold mb-3  dark:text-white">
           {siteConfig('HEO_HERO_TITLE_1', null, CONFIG)}
           <br />
@@ -119,7 +119,7 @@ function TagsGroupBar() {
   const groupIcons = siteConfig('HEO_GROUP_ICONS', null, CONFIG).concat(siteConfig('HEO_GROUP_ICONS', null, CONFIG))
 
   return (
-    <div className="tags-group-all flex -rotate-[30deg] h-full">
+    <div className="tags-group-all flex -rotate-[30deg] h-full z-0">
       <div className="tags-group-wrapper flex flex-nowrap absolute top-16">
         {groupIcons?.map((g, index) => {
           return (
@@ -127,7 +127,7 @@ function TagsGroupBar() {
               <div
                 style={{ background: g.color_1 }}
                 className={
-                  'tags-group-icon w-28 h-28 rounded flex items-center justify-center text-white text-lg font-bold shadow-md'
+                  'tags-group-icon w-28 h-28 rounded-xl flex items-center justify-center text-white text-lg font-bold shadow-md'
                 }
               >
                 <LazyImage
@@ -140,7 +140,7 @@ function TagsGroupBar() {
               <div
                 style={{ background: g.color_2 }}
                 className={
-                  'tags-group-icon  mt-5 w-28 h-28 rounded flex items-center justify-center text-white text-lg font-bold shadow-md'
+                  'tags-group-icon  mt-5 w-28 h-28 rounded-xl flex items-center justify-center text-white text-lg font-bold shadow-md'
                 }
               >
                 <LazyImage
