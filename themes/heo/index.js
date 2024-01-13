@@ -326,7 +326,7 @@ const LayoutSlug = props => {
       showTag={false}
       slotRight={slotRight}
     >
-      <div className={`w-full ${fullWidth ? '' : 'xl:max-w-5xl'} ${hasCode ? 'xl:w-[73.15vw]' : ''} lg:hover:shadow lg:border rounded lg:px-2 lg:py-4 bg-white dark:bg-[#18171d] dark:bg-[#18171d] article`}>
+      <div className={`w-full ${fullWidth ? '' : 'xl:max-w-5xl'} ${hasCode ? 'xl:w-[73.15vw]' : ''} lg:hover:shadow rounded lg:px-2 lg:py-4 bg-white dark:bg-[#18171d] dark:bg-[#18171d] article`}>
         {lock && <ArticleLock validPassword={validPassword} />}
 
         {!lock && (
