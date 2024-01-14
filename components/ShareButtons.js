@@ -354,11 +354,11 @@ const ShareButtons = ({ post }) => {
                             <i className='fab fa-weixin w-8' />
                         </div>
                         <div className='absolute'>
-                        <div id='pop' className={(qrCodeShow ? 'opacity-100 ' : ' invisible opacity-0') + ' z-40 absolute bottom-10 -left-10 bg-white shadow-xl transition-all duration-200 text-center'}>
+                        <div id='pop' className={(qrCodeShow ? 'opacity-100 ' : ' invisible opacity-0') + ' z-40 absolute bottom-10 -left-10 bg-white shadow-xl transition-all duration-200 text-center rounded'}>
                                 <div className='p-2 mt-1 w-28 h-28'>
                                     { qrCodeShow && <QrCode value={shareUrl}/> }
                                 </div>
-                                <span className='text-black font-semibold p-1 rounded-t-lg text-sm mx-auto mb-1'>
+                                <span className='text-black font-bold p-1 rounded-t-lg text-sm mx-auto mb-1'>
                                     {locale.COMMON.SCAN_QR_CODE}
                                 </span>
                         </div>
@@ -366,7 +366,7 @@ const ShareButtons = ({ post }) => {
                     </button>
               }
               if (singleService === 'link') {
-                return <button aria-label={singleService} key={singleService} className='cursor-pointer bg-yellow-500 text-white rounded-full mx-1'>
+                return <button aria-label={singleService} key={singleService} className='cursor-pointer bg-blue-500 text-white rounded-full mx-1'>
                         <div alt={locale.COMMON.URL_COPIED} onClick={copyUrl} >
                             <i className='fas fa-link w-8' />
                         </div>
