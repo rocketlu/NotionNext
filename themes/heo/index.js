@@ -76,7 +76,7 @@ const LayoutBase = props => {
       {/* 主区块 */}
       <main
         id="wrapper-outer"
-        className={`flex-grow w-full ${maxWidth} mx-auto relative md:px-5`}
+        className={`flex-grow w-full ${maxWidth} mx-auto relative md:px-0`}
       >
         <div
           id="container-inner"
@@ -332,7 +332,7 @@ const LayoutSlug = props => {
         {!lock && (
           <div
             id="article-wrapper"
-            className="overflow-x-auto flex-grow mx-auto md:w-full md:px-5 "
+            className="overflow-x-auto flex-grow mx-auto md:w-full md:px-0 "
           >
             <article
               data-aos="fade-up"
