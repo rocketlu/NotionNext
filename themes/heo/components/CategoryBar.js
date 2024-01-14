@@ -30,7 +30,7 @@ export default function CategoryBar(props) {
   }
 
   return <div id='category-bar' className={`flex flex-nowrap justify-between items-center h-12 mb-4 space-x-2 w-full lg:bg-white dark:lg:bg-[#1e1e1e]  
-  ${border ? 'lg:border lg:hover:border dark:lg:border-gray-800 hover:border-indigo-600 dark:hover:border-blue-600 ' : ''}  py-2 lg:px-2 rounded transition-colors duration-200`}>
+  ${border ? 'dark:lg:border-gray-800 hover:border-indigo-600 dark:hover:border-blue-600 ' : ''}  py-2 lg:px-2 rounded transition-colors duration-200`}>
 
         <div id='category-bar-items' ref={categoryBarItemsRef} className='scroll-smooth max-w-4xl rounded scroll-hidden flex justify-start flex-nowrap items-center overflow-x-scroll'>
             <MenuItem href='/' name={locale.NAV.INDEX} />
