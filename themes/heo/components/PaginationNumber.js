@@ -134,9 +134,9 @@ function getPageElement(page, currentPage, pagePrefix) {
             passHref
             className={
                 (selected
-                  ? 'bg-indigo-600 dark:bg-yellow-600 text-white '
+                  ? 'bg-indigo-600 dark:bg-indigo-600 text-white '
                   : 'dark:bg-[#1e1e1e] bg-white') +
-                ' hover:border-indigo-600 dark:hover:bg-yellow-600 dark:border-gray-600 px-4 border py-2 rounded-lg drop-shadow-sm duration-200 transition-colors'
+                ' hover:border-indigo-600 dark:hover:bg-indigo-600 dark:border-gray-600 px-4 border py-2 rounded-lg drop-shadow-sm duration-200 transition-colors'
             }>
 
             {page}
