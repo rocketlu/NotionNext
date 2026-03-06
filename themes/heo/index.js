@@ -85,7 +85,7 @@ const LayoutBase = props => {
     false,
     CONFIG
   )
-  const HEO_LOADING_COVER = siteConfig('HEO_LOADING_COVER', true, CONFIG)
+  const HEO_LOADING_COVER = siteConfig('HEO_LOADING_COVER', false, CONFIG)
 
   // 加载wow动画
   useEffect(() => {
